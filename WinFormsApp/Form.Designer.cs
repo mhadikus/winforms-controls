@@ -28,23 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.myControl1 = new WinFormsControls.MyControl();
+            this.MyControl = new WinFormsControls.MyControl();
             this.SuspendLayout();
             // 
-            // myControl1
+            // MyControl
             // 
-            this.myControl1.BackColor = System.Drawing.Color.LawnGreen;
-            this.myControl1.Location = new System.Drawing.Point(12, 21);
-            this.myControl1.Name = "myControl1";
-            this.myControl1.Size = new System.Drawing.Size(296, 105);
-            this.myControl1.TabIndex = 0;
+            this.MyControl.BackColor = System.Drawing.Color.LawnGreen;
+            this.MyControl.IsChecked = false;
+            this.MyControl.Location = new System.Drawing.Point(12, 21);
+            this.MyControl.Name = "MyControl";
+            this.MyControl.Size = new System.Drawing.Size(296, 105);
+            this.MyControl.TabIndex = 0;
+            this.MyControl.TextBoxText = "Type here...";
             // 
             // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.myControl1);
+            this.Controls.Add(this.MyControl);
             this.Name = "Form";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -53,7 +55,7 @@
 
         #endregion
 
-        private WinFormsControls.MyControl myControl1;
+        private WinFormsControls.MyControl MyControl;
     }
 }
 
