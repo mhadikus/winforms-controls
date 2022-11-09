@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 using System.Windows.Forms;
 
 namespace WinFormsControls
@@ -15,6 +8,20 @@ namespace WinFormsControls
         public WebView2Control()
         {
             InitializeComponent();
+        }
+
+        [Browsable(true)]
+        [EditorBrowsable(EditorBrowsableState.Always)]
+        public bool IsInitialized => WebView2.CoreWebView2 != null;
+
+        [Browsable(true)]
+        [EditorBrowsable(EditorBrowsableState.Always)]
+        public void Navigate(string url)
+        {
+            if (IsInitialized)
+            {
+                WebView2.CoreWebView2.Navigate(url);
+            }
         }
     }
 }
