@@ -37,7 +37,7 @@
             this.MyControl.IsChecked = false;
             this.MyControl.Location = new System.Drawing.Point(12, 21);
             this.MyControl.Name = "MyControl";
-            this.MyControl.Size = new System.Drawing.Size(296, 105);
+            this.MyControl.Size = new System.Drawing.Size(289, 86);
             this.MyControl.TabIndex = 0;
             this.MyControl.TextBoxText = "Type here...";
             // 

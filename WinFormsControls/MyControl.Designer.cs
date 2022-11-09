@@ -35,7 +35,7 @@
             // CheckBox
             // 
             this.CheckBox.AutoSize = true;
-            this.CheckBox.Location = new System.Drawing.Point(22, 61);
+            this.CheckBox.Location = new System.Drawing.Point(12, 56);
             this.CheckBox.Name = "CheckBox";
             this.CheckBox.Size = new System.Drawing.Size(78, 17);
             this.CheckBox.TabIndex = 0;
@@ -44,9 +44,9 @@
             // 
             // TextBox
             // 
-            this.TextBox.Location = new System.Drawing.Point(22, 24);
+            this.TextBox.Location = new System.Drawing.Point(12, 16);
             this.TextBox.Name = "TextBox";
-            this.TextBox.Size = new System.Drawing.Size(194, 20);
+            this.TextBox.Size = new System.Drawing.Size(257, 20);
             this.TextBox.TabIndex = 1;
             this.TextBox.Text = "Type here...";
             this.TextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -59,7 +59,7 @@
             this.Controls.Add(this.TextBox);
             this.Controls.Add(this.CheckBox);
             this.Name = "MyControl";
-            this.Size = new System.Drawing.Size(296, 105);
+            this.Size = new System.Drawing.Size(288, 93);
             this.ResumeLayout(false);
             this.PerformLayout();
 
