@@ -28,9 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.MyControl = new WinFormsControls.MyControl();
             this.WebView2Control = new WinFormsControls.WebView2Control();
+            this.MyControl = new WinFormsControls.MyControl();
             this.SuspendLayout();
+            // 
+            // WebView2Control
+            // 
+            this.WebView2Control.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.WebView2Control.Location = new System.Drawing.Point(345, 21);
+            this.WebView2Control.Name = "WebView2Control";
+            this.WebView2Control.Size = new System.Drawing.Size(518, 496);
+            this.WebView2Control.TabIndex = 1;
             // 
             // MyControl
             // 
@@ -41,13 +49,6 @@
             this.MyControl.Size = new System.Drawing.Size(289, 86);
             this.MyControl.TabIndex = 0;
             this.MyControl.TextBoxText = "Type here...";
-            // 
-            // WebView2Control
-            // 
-            this.WebView2Control.Location = new System.Drawing.Point(345, 21);
-            this.WebView2Control.Name = "WebView2Control";
-            this.WebView2Control.Size = new System.Drawing.Size(516, 495);
-            this.WebView2Control.TabIndex = 1;
             // 
             // Form
             // 
