@@ -9,7 +9,7 @@
 - Visual Studio 2022
 - .NET Framework 4.6.2 SDK
 - Microsoft Edge or the [Microsoft Edge WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section)
-- LabVIEW 2020
+- LabVIEW 2020 (32-bit or 64-bit)
 
 <h2>Building the example WinForm controls</h2>
 
@@ -18,6 +18,7 @@
 - You can install the package by selecting `Restore NuGet Packages` on the solution
 - Build the solution to create the .NET assembly that contains the .NET controls
 - The assembly `WinFormsControls.dll` can be found in the `WinFormsControls\bin` directory
+- This assembly is built for `AnyCPU` and can be loaded by both 32-bit and 64-bit LabVIEW
 
 <h1>Simple WinForms control with a text box and a checkbox</h1>
 
