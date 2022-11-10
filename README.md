@@ -4,6 +4,13 @@
 - The .NET container supports hosting WinForms controls
 - As of 2023, LabVIEW .NET container does not support hosting WPF controls
 
+<h2>Requirements</h2>
+
+- Visual Studio 2022
+- .NET Framework 4.6.2 SDK
+- Microsoft Edge or the [Microsoft Edge WebView2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section)
+- LabVIEW 2020
+
 <h2>Building the example WinForm controls</h2>
 
 - Open `WinFormsApp.sln` with Visual Studio 2022
