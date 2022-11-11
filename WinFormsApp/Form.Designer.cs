@@ -28,9 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.ExecuteScriptButton = new System.Windows.Forms.Button();
             this.WebView2Control = new WinFormsControls.WebView2Control();
             this.MyControl = new WinFormsControls.MyControl();
             this.SuspendLayout();
+            // 
+            // ExecuteScriptButton
+            // 
+            this.ExecuteScriptButton.Location = new System.Drawing.Point(345, 546);
+            this.ExecuteScriptButton.Name = "ExecuteScriptButton";
+            this.ExecuteScriptButton.Size = new System.Drawing.Size(112, 23);
+            this.ExecuteScriptButton.TabIndex = 2;
+            this.ExecuteScriptButton.Text = "Execute Script";
+            this.ExecuteScriptButton.UseVisualStyleBackColor = true;
+            this.ExecuteScriptButton.Click += new System.EventHandler(this.ExecuteScriptButton_Click);
             // 
             // WebView2Control
             // 
@@ -54,7 +65,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(909, 556);
+            this.ClientSize = new System.Drawing.Size(923, 627);
+            this.Controls.Add(this.ExecuteScriptButton);
             this.Controls.Add(this.WebView2Control);
             this.Controls.Add(this.MyControl);
             this.Name = "Form";
@@ -67,6 +79,7 @@
 
         private WinFormsControls.MyControl MyControl;
         private WinFormsControls.WebView2Control WebView2Control;
+        private System.Windows.Forms.Button ExecuteScriptButton;
     }
 }
 
