@@ -15,12 +15,19 @@ namespace WinFormsApp
         async void InitializeAsync()
         {
             await WebView2Control.WebView.EnsureCoreWebView2Async(null);
-            WebView2Control.CoreWebView.Navigate(@"https://www.google.com");
+            UrlBox.Text = @"https://www.google.com";
+            WebView2Control.CoreWebView.Navigate(UrlBox.Text);
+        }
+
+        private void GoButton_Click(object sender, EventArgs e)
+        {
+            WebView2Control.CoreWebView.Navigate(UrlBox.Text);
         }
 
         private void ExecuteScriptButton_Click(object sender, EventArgs e)
         {
             string htmlContent = "<body>Test executing JavaScript</body>";
+            UrlBox.Text = @"https://";
             WebView2Control.WebView.NavigateToString(htmlContent);
             WebView2Control.WebView.NavigationCompleted += ExecuteScriptButton_NavigationCompleted;
         }
