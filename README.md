@@ -37,6 +37,7 @@
 - The example user control [`WebView2Control`](https://github.com/mhadikus/winforms-controls/blob/main/WinFormsControls/WebView2Control.Designer.cs) contains the Microsoft Edge [WebView2](https://learn.microsoft.com/en-us/microsoft-edge/webview2) control
 - The control has a public function [`Navigate(string url)`](https://github.com/mhadikus/winforms-controls/blob/main/WinFormsControls/WebView2Control.cs#L19)
 - Read Rick Strahl's [weblog](https://weblog.west-wind.com/posts/2021/Jan/14/Taking-the-new-Chromium-WebView2-Control-for-a-Spin-in-NET-Part-1) about the WebView2 control
+- Read my post about CefSharp vs WebView2 [here](https://forums.ni.com/t5/LabVIEW/How-do-I-embedded-the-Chromium-Embedded-browser-in-LabVIEW/m-p/4266018#M1242704)
 
 ![image](WebView2Control-FP.jpg)
 
